@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+*{
+    list-style:none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family: 'GmarketSansMedium';}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;}
+caption{
+    position: absolute;
+    left: -99999px;
+    font-size: 0;
+    line-height: 0;
+    height: 0;}
+img{
+    display:block;}
+a{
+    color: black;
+}
+.clearfix::after{
+    content:'';
+    clear:both;
+    display:block;}
+/*
+헤더
+*/
+header{
+    position: relative;
+    width: 1400px;
+    height: 98px;
+    margin: 0 auto;}
+/*로고*/
+header h1{
+    float: left;
+    margin-top: 18px;}
+/*메인메뉴*/
+header nav{
+    float: left;
+    margin:17px 0 0 78px;}
+header nav .gnb {
+    background: #fff;}
+header nav .gnb li{
+    float: left;}
+header nav .gnb li a{
+    display: block;
+    padding: 22px 20px;
+    font-size: 17px;
+    color: #333333; }
+header nav .gnb li:last-child span:nth-child(1){
+    color: #fe7F00;}
+header nav .gnb li:last-child span:nth-child(2){
+    color: #0365ad; }
+header nav .gnb li:last-child span:nth-child(3){
+    color: #93be49;}
+header nav .gnb li:last-child span:nth-child(4){
+    color: #f35c8a;}
+/*로컬메뉴*/
+header .lnb{
+    float: right;
+    margin-top: 21px;}
+header .lnb li{
+    float: left;
+    margin-top: 12px;}
+header .lnb li:last-child{
+    margin: 0;}
+header .lnb li a{
+    display: block;
+    padding: 5px 10px;
+    color: #666666;
+    font-family: 'GmarketSansLight';
+    font-size: 14px;
+    font-weight: 600;}
+/*
+본문
+*/
+/*비주얼*/
+.visual ul li a{
+    display: block;
+    position: relative;
+    width: 1400px;
+    height: 474px;
+    margin: 0 auto;
+    text-align: center;}
+.visual ul li:nth-child(1){
+    background: #a9f1ff;}
+/* 퀵메뉴 */
+.quick{
+    background: #f2f4f7;}
+.quick ul{
+    position: relative;
+    width: 1400px;
+    height: 110px;
+    margin: 0 auto;}
+.quick ul li{
+    float: left;
+    width: 20%;
+    height: 84px;
+    margin: 15px 0 11px 0;
+    border-right: 1px solid #d9dbde;}
+.quick ul li a{
+    display: block;
+    line-height: 84px;}
+.quick ul li:nth-child(1) a{
+    padding-left:129px;
+    background: url("../images/quick_1.jpg") no-repeat 55px center ;}
+.quick ul li:nth-child(2) a{
+    padding-left:145px;
+    background: url("../images/quick_2.JPG") no-repeat 67px center ;}
+.quick ul li:nth-child(3) a{
+    padding-left:143px;
+    background: url("../images/quick_3.jPG") no-repeat 62px center ;}
+.quick ul li:nth-child(4) a{
+    padding-left:118px;
+    background: url("../images/quick_4.jpg") no-repeat 51px center ;}
+.quick ul li:nth-child(5) a{
+    padding-left:143px;
+    background: url("../images/quick_5.JPG") no-repeat 65px center ;}
+/*
+board
+*/
+main .board{
+    position: relative;
+    width: 1400px;
+    height: 502px;
+    margin: 0 auto;
+    padding-top: 70px;}
+main .board article{
+    float: left;
+    position: relative;
+    height: 372px;
+    padding: 40px 30px;
+    border: 1px solid #e6e8eb;}
+main .board article h2{
+    font-size: 18px;
+    color: #0d62b2;
+    padding-bottom: 10px;
+    background: url("../images/board.gif") no-repeat left 0 bottom;}
+main .board article ul{
+    margin-top: 22px;}
+main .board article ul li{
+    height: 52px;
+    line-height: 52px;
+    border-top: 1px solid #e6e6e6;}
+main .board article ul li a{
+    float: left;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+main .board article ul li span{
+    float: right;}
+main .board article ul li:first-child{
+    border: 0;}
+main .board article > p{
+    position: absolute;
+    top: 30px;
+    right: 30px;}
+main .board article > p > a{
+    display: block;
+    padding-left: 10px;
+    background: url("../images/board_more.gif") no-repeat 0 4px;}
+/*이룸소식*/
+main .board .notice{
+    width: 470px;
+    margin-right: 20px;}
+/*청년정책 새소식*/
+main .board .news{
+    width: 470px;
+    margin-right: 35px;}
+/*센터일정*/
+main .board .agenda{
+    width: 390px;}
+main .board .agenda h2{
+    padding-bottom: 4px;
+    background: none;}
+main .board .agenda .cal_top{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;}
+main .board .agenda .btn_prev{
+    position: absolute;
+    top: 0;
+    right: 0;}
+main .board .agenda .btn_next{
+    position: absolute;
+    top: 0;
+    left: 0;}
+main .board .agenda .cal_top a{
+    display: block;
+    padding: 8px;
+    line-height: 22px;
+    border: 1px solid #e1e1e1;}
+main .board .agenda table{
+    width: 100%;
+    margin-top: 9px;}
+main .board .agenda table th{
+    padding: 5px;
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;}
+main .board .agenda table th:first-child,
+main .board .agenda table td:first-child{
+    color: red;}
+main .board .agenda table th:last-child,
+main .board .agenda table td:last-child{
+    color: blue;}
+main .board .agenda table td{
+    padding: 5px;
+    text-align: center;}
+main .board .agenda table span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #f7f7f7;}
+main .board .agenda table td .today{
+    color: #fff;
+    background: #000;}
+main .board .agenda table td .used{
+    color: #fff;
+    background: #ff0099;}
+main .board .agenda table td .used a{
+    display: block;
+    color: #fff;}
+/*
+gallery
+*/
+main .gallery{
+    background:#2075c8;}
+main .gallery .inner{
+    position: relative;
+    width: 1400px;
+    height: 548px;
+    margin: 0 auto;
+    padding-top: 70px;}
+main .gallery article{
+    float: left;
+    position: relative;
+    height: 390px;}
+main .gallery article h2{
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 24px;}
+main .gallery article > p{
+    position: absolute;
+    top: 10px;
+    right: 0px;}
+main .gallery article > p > a{
+    display: block;
+    padding-left: 10px;
+    color: #fff;
+    background: url("../images/gallery_more.gif") no-repeat 0 4px;}
+/*활동 갤러리*/
+main .gallery .act{
+    width: 940px;}
+main .gallery .act ul li{
+    float: left;
+    width: 300px;
+    margin-right: 20px;}
+main .gallery .act ul li:last-child{
+    margin-right: 0;}
+main .gallery .act ul li .txt{
+    height: 135px;
+    background: #fff;}
+main .gallery .act ul li .txt span{
+    display: block;
+    padding: 30px;
+    text-align: center;}
+main .gallery .act ul li .txt span:first-child{
+    height: 52px;}
+/*동영상 갤러리*/
+main .gallery .movie{
+    float: right;
+    width: 400px;}
+main .gallery .movie .vod{
+    width: 400px;
+    height: 330px;
+    background: #000;}
+main .gallery .movie .vod video{
+    width: 100%;
+    margin-top: 50px;}
+/*배너*/
+main .banner .inner{
+    position: relative;
+    width: 1400px;
+    height: 107px;
+    margin: 0 auto; }
+main .banner .inner h2{
+    float: left;
+    margin-top: 45px;}
+main .banner .inner .cont{
+    float: left;
+    margin-top: 40px;}
+main .banner .inner .cont li{
+    float: left;}
+main .banner .inner .pic{
+    float:right;
+    margin-top: 25px;}
+main .banner .inner .pic li{
+    float: left;}
+/*
+푸터
+*/
+footer{
+    background:#343434;
+    margin: 0 auto;}
+footer section{
+    position: relative;
+    width: 1400px;
+    height: 244px;
+    margin: 0 auto;
+    color: #888888;}
+footer .footer_01 a{
+    color: #888888;}
+footer .footer_01 li a{
+    float: left;
+    display: block;        
+    margin: 30px 6px 28px 0;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #5a5a5a;}
+footer .footer_02{
+    clear: both;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 33px;}
+footer .time span,
+footer .address span{
+    color: #555555;}
+footer .btn_top{
+    float: right;
+    margin: 52px 19px 0 0;}
+footer .footer_bottom{
+    clear: both;
+    float: left;
+    font-size:13px;
+    border-top: 1px solid #3c3c3c; }
+
+
